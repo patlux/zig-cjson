@@ -13,6 +13,7 @@ pub fn build(b: *std.Build) !void {
 
     const cjsonDep = b.dependency("cjson", .{});
     exe.addIncludePath(cjsonDep.path(""));
+    exe.linkLibC();
     exe.addCSourceFiles(.{
         .root = .{
             .dependency = .{
