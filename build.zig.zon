@@ -1,0 +1,15 @@
+.{
+    .name = "zig-hello",
+    .version = "0.0.0",
+    .dependencies = .{
+        .cjson = .{
+            .url = "https://github.com/DaveGamble/cJSON/archive/refs/heads/master.zip",
+            .hash = "12205706e5e76933c841491ff4155b253e7e29d6acf4f451ba31be618ee455c68585",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
